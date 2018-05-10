@@ -31,6 +31,7 @@ class LibraryList extends Component {
 
 const mapStateToProps = state => {
   // return object that will become available to LibraryList as props when connected as below
+  console.log('State:');
   console.log(state);
 
   return { libraries: state.libraries };
