@@ -5,7 +5,7 @@ import ListItem from './ListItem';
 
 class LibraryList extends Component {
   // define data for ListView
-  componentWillMount(){
+  componentWillMount() {
     // this is boilerplate
     const ds = new ListView.DataSource({
       rowHasChanged: (r1, r2) => r1 !== r2
@@ -15,9 +15,7 @@ class LibraryList extends Component {
   }
 
   // library = the actual item to render
-  renderRow = (library) => {
-    return <ListItem library={library} />;
-  }
+  renderRow = (library) => <ListItem library={library} />
 
   render() {
     return (
